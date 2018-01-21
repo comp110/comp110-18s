@@ -6,7 +6,8 @@
     "start": "node build/server/server.js",
     "pull": "git checkout -- package.json && git pull origin master && npm install",
     "test": "node build/test.js",
-    "test-bundle": "node build/bundleTest.js"
+    "test-bundle": "node build/bundleTest.js",
+    "sos": "rm -rf ./node_modules && rm package-lock.json && git checkout -- package.json && npm install"
   },
   "author": "",
   "license": "ISC",
