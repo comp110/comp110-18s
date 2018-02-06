@@ -1,22 +1,9 @@
 import { print } from "introcs";
 import { List, cons, first, rest, listify } from "introcs/list";
 
-let bouncer = (list: List<number>): List<number> => {
-    if (list === null) {
-        return null;
-    } else {
-        let person: number = first(list);
-        if (person < 21) {
-            return rest(list);
-        } else {
-            return cons(person, bouncer(rest(list)));
-        }
-    }
-};
-
 export let main = async () => {
-    
-    print("Bouncer Algo - Take 1");
+
+    print("Bouncer Algo - Take 2");
 
     print("Entrance Line:");
     let entranceLine: List<number>;
@@ -28,6 +15,20 @@ export let main = async () => {
     barLine = bouncer(entranceLine);
     print(barLine);
 
+};
+
+// TODO: Fix the bouncer function.
+let bouncer = (line: List<number>): List<number> => {
+    if (line === null) {
+        return null;
+    } else {
+        let person: number = first(line);
+        if (person < 21) {
+            return rest(line);
+        } else {
+            return cons(person, bouncer(rest(line)));
+        }
+    }
 };
 
 main();
