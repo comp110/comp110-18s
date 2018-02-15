@@ -2,7 +2,14 @@ import { print } from "introcs";
 import { List, first, rest, listify } from "introcs/list";
 
 let main = async () => {
-    print(max1(listify(1, 2, 3, 4, 5)));
+    let input: List<number> = listify(1, 2);
+    
+    print("max1:");
+    // TODO 1: print the result of calling max1 with input
+    
+    print("max2:");
+    // TODO 2: print the result of calling max2 with input
+
 };
 
 let max1 = (values: List<number>): number => {
