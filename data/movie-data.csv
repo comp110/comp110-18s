@@ -1,0 +1,43 @@
+title,tomatometer,imdbRating,genre,year,minutes,hasAdamSandler,hasNickCage
+The Waterboy,35,6.1,Comedy,1998,90,TRUE,FALSE
+National Treasure,44,6.9,Action,2004,131,FALSE,TRUE
+Jack and Jill,3,3.4,Comedy,2011,91,TRUE,FALSE
+Vampire's Kiss,61,5.9,Comedy,1988,103,FALSE,TRUE
+Grown Ups,10,6,Comedy,2010,102,TRUE,FALSE
+Grown Ups 2,7,5.4,Comedy,2013,101,TRUE,FALSE
+Forrest Gump,71,8.8,Drama,1994,142,FALSE,FALSE
+The Shawshank Redemption,91,9.2,Drama,1994,142,FALSE,FALSE
+When Harry Met Sally,89,7.6,Romance,1989,96,FALSE,FALSE
+The Princess Bride,97,8.1,Adventure,1987,98,FALSE,FALSE
+Fight Club,79,8.8,Drama,1999,139,FALSE,FALSE
+Ghost Rider,26,5.2,Action,2007,114,FALSE,TRUE
+Inception,86,8.8,Action,2010,168,FALSE,FALSE
+The Godfather,98,9.2,Drama,1972,175,FALSE,FALSE
+Pixels,17,5.6,Comedy,2015,105,TRUE,FALSE
+G-Force,23,5.1,Comedy,2009,98,FALSE,TRUE
+Talladega Nights: The Ballad of Ricky Bobby,71,6.6,Comedy,2006,108,FALSE,FALSE
+Napoleon Dynamite,71,6.9,Comedy,2004,96,FALSE,FALSE
+The Notebook,52,7.9,Romance,2004,123,FALSE,FALSE
+Sky High,73,6.2,Comedy,2005,100,FALSE,FALSE
+Shrek,88,7.9,Comedy,2001,90,FALSE,FALSE
+Shrek 2,88,7.2,Comedy,2004,93,FALSE,FALSE
+Shrek the Third,41,6.1,Comedy,2007,93,FALSE,FALSE
+The Bee Movie,51,6.1,Comedy,2007,91,FALSE,FALSE
+Click,32,6.4,Comedy,2006,107,TRUE,FALSE
+Hoodwinked,47,6.5,Comedy,2005,80,FALSE,FALSE
+The Shape of Water,92,7.8,Drama,2017,123,FALSE,FALSE
+Black Panther,97,7.8,Action,2018,134,FALSE,FALSE
+Wonder Woman,92,7.5,Action,2017,141,FALSE,FALSE
+Sharkboy and Lavagirl,24,3.5,Action,2005,95,FALSE,FALSE
+I Now Pronounce You Chuck & Larry,14,6,Comedy,2007,115,TRUE,FALSE
+The Emoji Movie,9,3,Comedy,2017,91,FALSE,FALSE
+Black Panther,60,7,Sport,1996,92,TRUE,FALSE
+Baby Driver,93,7.7,Action,2017,112,FALSE,FALSE
+The Bucket List,40,7.4,Comedy,2007,107,FALSE,FALSE
+V for Vendetta,73,8.2,Action,2005,132,FALSE,FALSE
+Arrival,94,7.9,Drama,2016,116,FALSE,FALSE
+Rubber,69,5.8,Comedy,2010,82,FALSE,FALSE
+Sharknado,82,3.3,Action,2013,86,FALSE,FALSE
+Troll 2,6,2.8,Garbage,1990,95,FALSE,FALSE
+Lawnmower Man 2: Beyond Cyberspace,11,2.5,Garbage,1996,93,FALSE,FALSE
+The Room,26,3.6,Drama,2003,99,FALSE,FALSE
