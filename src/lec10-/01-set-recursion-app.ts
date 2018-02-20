@@ -63,14 +63,14 @@ let filterPassing = (movies: List<Movie>): List<Movie> => {
     }
 };
 
-let contains = <T>(a: List<T>, item: T): boolean => {
+let includes = <T>(a: List<T>, item: T): boolean => {
     if (a === null) {
         return false;
     } else {
         if (first(a) === item) {
             return true;
         } else {
-            return contains(rest(a), item);
+            return includes(rest(a), item);
         }
     }
 };
@@ -78,7 +78,7 @@ let contains = <T>(a: List<T>, item: T): boolean => {
 let union = <T>(a: List<T>, b: List<T>): List<T> => {
     if (a === null) {
         return b;
-    } else if (contains(b, first(a))) {
+    } else if (includes(b, first(a))) {
         return union(rest(a), b);
     } else {
         return cons(first(a), union(rest(a), b));
