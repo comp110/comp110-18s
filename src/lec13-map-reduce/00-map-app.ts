@@ -14,10 +14,9 @@ class Game {
 export let main = async () => {
     let games: List<Game> = await csvToList("Select Games Data", Game);
 
-    let points: List<number> = null;
-    
     // TODO #2 - Assign to points the result of calling map with
     // the games List and the gameToPoints function you wrote below.
+    let points: List<number> = null;
 
     print("Berry's Points:");
     print(points);
