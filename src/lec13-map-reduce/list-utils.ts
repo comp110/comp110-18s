@@ -1,14 +1,10 @@
 import { List, cons, first, rest, listify } from "introcs/list";
 
-interface Transform<T, U> {
-    (item: T): U;
-}
+// Generic Implementations of filter, map, and reduce
 
-interface Reducer<T, U> {
-    (memo: U, item: T): U;
-}
+// Filter
 
-interface Predicate<T> {
+export interface Predicate<T> {
     (item: T): boolean;
 }
 
@@ -22,6 +18,12 @@ export let filter = <T>(xs: List<T>, test: Predicate<T>): List<T> => {
     }
 };
 
+// Map
+
+export interface Transform<T, U> {
+    (item: T): U;
+}
+
 export let map = <T, U> (xs: List<T>, f: Transform<T, U>): List<U> => {
     if (xs === null) {
         return null;
@@ -29,6 +31,12 @@ export let map = <T, U> (xs: List<T>, f: Transform<T, U>): List<U> => {
         return cons(f(first(xs)), map(rest(xs), f));
     }
 };
+
+// Reduce
+
+export interface Reducer<T, U> {
+    (memo: U, item: T): U;
+}
 
 export let reduce = <T, U> (xs: List<T>, f: Reducer<T, U>, memo: U): U => {
     if (xs === null) {
