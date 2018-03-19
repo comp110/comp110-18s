@@ -6,17 +6,17 @@
  * 
  */
 export class Game {
-    player: string = "";
+    player: string = ""; // name of player
     opponent: string = "";
     court: string = "";
-    outcome: string = "";
+    outcome: string = ""; // "won" or "lost"
     minutes: number = 0;
-    fgm: number = 0;
-    fga: number = 0;
-    tpm: number = 0;
-    tpa: number = 0;
-    ftm: number = 0;
-    fta: number = 0;
+    fgm: number = 0; // field goals made
+    fga: number = 0; // field goals attempted
+    tpm: number = 0; // three pointers made
+    tpa: number = 0; // three pointers attempted
+    ftm: number = 0; // *** free throws made ***
+    fta: number = 0; // *** free throws attempted ***
     rebounds: number = 0;
     assists: number = 0;
     blocks: number = 0;
