@@ -9,20 +9,9 @@ export class Axes {
     width: number;
     height: number;
 
-    constructor(width: number, height: number) {
-        this.width = width;
-        this.height = height;
-    }
+    // TODO: Declare constructor
 
-    getMinX = (): number => {
-        return -this.width / 2;
-    }
-
-    getMaxX = (): number => {
-        return this.height / 2;
-    }
-
-    getShapes(): Group {
+    getShapes = (): Group => {
         let g = new Group();
 
         // When the total width is this.width, half the x axis should be negative, half positive
