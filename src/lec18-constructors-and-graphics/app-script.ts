@@ -1,9 +1,10 @@
-import "introcs";
+import { print } from "introcs";
 
 import {
     SVG,
     Group,
     Rectangle,
+    Line,
     Circle,
     Stroke,
     Color
@@ -15,33 +16,36 @@ const RADIANS = 2 * Math.PI;
 const PERIOD: number = 5;
 const MS_IN_S: number = 1000;
 
-let svgTag = new SVG("artboard");
+let artboard = new SVG("artboard");
+
+let dots: Circle[] = [];
 
 export let main = async () => {
     let g = new Group();
 
     let axes = new Axes(100, 100);
     g.add(axes.getShapes());
-    
-    let time: number = Date.now() / MS_IN_S;
-    let periodPercent: number = time % PERIOD / PERIOD;
-    
-    for (let i = 0; i < 10; i++) {
-        let percent = i / 10;
-        let angle = percent * RADIANS;
-        let angleT: number = periodPercent * RADIANS;
-        let cy = Math.sin(angle + angleT) * 20;
-        let c = new Circle(10, 100 - 20 * i - 10, cy);
-        let red = 0;
-        let green = 0;
-        let blue = i / 10;
-        c.fill = new Color(red, green, blue);
-        g.add(c);
-    }
 
-    svgTag.render(g);
+    let i = 0;
+    let count = 10;
+    while (i < count) {
+        let percent = (i + 1) / count;
+        let time = Date.now() / MS_IN_S;
+        let periodPercent = time % PERIOD / PERIOD;
+        let angle = percent * RADIANS;
+        let angleT = periodPercent * RADIANS;
+        let r = percent * axes.width / count / 2;
+        let cx = axes.getMinX() + axes.width * percent;
+        let cy = Math.sin(angle + angleT) * 40;
+        let c = new Circle(r, cx, cy);
+        dots[dots.length] = c;
+        g.add(c);
+        i++;
+    }
+    
+    artboard.render(g);
+
+    
 };
 
-setInterval(main, 16);
-
-main();
+setInterval(main, 20);
