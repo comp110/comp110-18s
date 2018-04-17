@@ -1,12 +1,12 @@
 /**
- * Given the number of rows and columns, this function will
- * initialize a new 2d array of the specified size and assign
- * a value of 0 to each element.
+ * Given the number of rows and columns, and an initial value,
+ * this function will initialize a new 2d array of that size and
+ * assign the initial value to each element.
  */
-export function array2d(rows: number, cols: number): number[][] {
-    let a: number[][] = [];
+export let array2d = <T> (rows: number, cols: number, value: T): T[][] => {
+    let a: T[][] = [];
 
     // TODO
 
     return a;
-}
+};

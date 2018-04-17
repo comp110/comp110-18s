@@ -1,8 +1,7 @@
-import "introcs";
-
+import { print } from "introcs";
 import { array2d } from "./2d-arrays-helpers";
 
-// Declare
+// Declare a 2d number array
 
 // Initialize using Literals
 
@@ -17,3 +16,5 @@ import { array2d } from "./2d-arrays-helpers";
 // Read from an element
 
 // Read from a top-level element
+
+// Inspect complete array in developers' tools console
