@@ -73,6 +73,15 @@ export class GameOfLife {
     }
 
     /**
+     * Given a cell coordinate, apply the rules of Conway's game of life.
+     * This function should return a 0 if the next state of the cell is dead.
+     * It should return a 1 if the next state of the cell is alive.
+     */
+    rules = (row: number, col: number): number => {
+        return 0;
+    }
+
+    /**
      * This method is called by the controller when the game is stopped
      * and the user clicks on a particular cell.
      */
