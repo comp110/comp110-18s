@@ -73,12 +73,20 @@ export class GameOfLife {
     }
 
     /**
-     * Given a cell coordinate, apply the rules of Conway's game of life.
-     * This function should return a 0 if the next state of the cell is dead.
-     * It should return a 1 if the next state of the cell is alive.
+     * The rules in conway's game of life are:
+     * 
+     * 1. Underpopulation: A live cell with fewer than 2 live neighbors dies.
+     * 2. Stasis: A live cell with 2 or 3 live neighbors lives.
+     * 3. Overpopulation: A live cell with more than 3 live neighbors dies.
+     * 4. Reproduction: A dead cell with 3 live neighbors comes to life.
      */
     rules = (row: number, col: number): number => {
-        return 0;
+        // TODO: Fix this logic.
+        if (this.isLive(row, col)) {
+            return 0; // Dead
+        } else {
+            return 1; // Alive
+        }
     }
 
     /**
