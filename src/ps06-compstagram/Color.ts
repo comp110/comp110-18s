@@ -24,7 +24,7 @@ export class Color {
      * The copy method is used to construct and initialize a new Color
      * object that is a copy of the Color object the method is called on.
      */
-    copy(): Color {
+    copy = (): Color => {
         return new Color(this.red, this.green, this.blue);
     }
     

@@ -35,7 +35,7 @@ export class Image {
      * The copy method is used to construct and initialize a new Image
      * object that is a copy of the Image object the method is called on.
      */
-    copy(): Image {
+    copy = (): Image => {
         let clone: Image = new Image(this.width, this.height);
         for (let row: number = 0; row < this.height; row++) {
             for (let col: number = 0; col < this.width; col++) {
