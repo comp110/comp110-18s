@@ -49,5 +49,12 @@ export let printList = <T> (list: List<T>): void => {
     }
 };
 
+let a = 1;
+let b = 2;
+print(a === first(cons(a, null)));
+print(null === rest(cons(a, null)));
+print(b === first(rest(cons(a, cons(b, null)))));
+print(null === rest(rest(cons(a, cons(b, null)))));
+
 let l = cons(1, cons(2, cons(3, null)));
 printList(listify(1, 2, 3, 4, 5));
