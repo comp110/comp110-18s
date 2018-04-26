@@ -21,18 +21,18 @@ export class EggRoulette {
 
     // TODO #1.1: Define the method boilEggs
 
-    pick(index: number): void {
+    pick = (index: number): void => {
         // TODO #2: pick method - logic for picking an Egg
     }
 
-    winner(): number {
+    winner = (): number => {
         // TODO #3: Logic for determining the winner
         return -1;
     }
 
     // TODO #4: Define the method shuffleEggs
 
-    currentPlayer(): number {
+    currentPlayer = (): number => {
         return this.turn % 2;
     }
 

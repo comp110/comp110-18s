@@ -1,7 +1,7 @@
 import { EggRoulette } from "./EggRoulette";
 import { Graphics } from "./Graphics";
 
-function main(): void {
+let main = async () => {
 
     let revealEggState: boolean = false;
     
@@ -9,6 +9,6 @@ function main(): void {
     let graphics: Graphics = new Graphics(gameLogic, revealEggState);
     graphics.draw();
 
-}
+};
 
 main();

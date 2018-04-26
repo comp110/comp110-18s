@@ -8,11 +8,11 @@ export class Egg {
         this.isCracked = false;
     }
 
-    boil(): void {
+    boil = (): void => {
         this.isRaw = false;
     }
 
-    crack(): void {
+    crack = (): void => {
         this.isCracked = true;
     }
 

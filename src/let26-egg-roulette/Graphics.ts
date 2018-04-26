@@ -8,10 +8,10 @@ const RADIUS: number = DIAMETER / 2;
 const GUTTER: number = (RADIUS / 4);
 
 // Helper Reducer
-function toGroup(group: Group, element: SVGElement): Group {
+let toGroup = (group: Group, element: SVGElement): Group => {
     group.add(element);
     return group;
-}
+};
 
 export class Graphics {
     game: EggRoulette;
@@ -26,7 +26,7 @@ export class Graphics {
         }
     }
 
-    draw(): void {
+    draw = (): void => {
         let artboard: SVG = new SVG("artboard");
         let group: Group = new Group();
 
@@ -40,7 +40,7 @@ export class Graphics {
         artboard.render(group);
     }
 
-    scoreboard(): Group {
+    scoreboard = (): Group => {
         let scoreboardGraphics: Group = new Group();
         let game: EggRoulette = this.game;
 
@@ -79,7 +79,7 @@ export class Graphics {
         return scoreboardGraphics;
     }
 
-    carton(): Group {
+    carton = (): Group => {
         let cartonGraphics: Group = new Group();
         let game: EggRoulette = this.game;
         let self: Graphics = this;
@@ -127,7 +127,7 @@ export class Graphics {
         return cartonGraphics;
     }
 
-    winner(): Text {
+    winner = (): Text => {
         let winText: Text = new Text("Player " + this.game.winner() + " wins!");
         winText.fill = Color.WHITE;
         return winText;

@@ -11,7 +11,7 @@ export class Carton {
         }
     }
 
-    size(): number {
+    size = (): number => {
         return this.eggs.length;
     }
 
